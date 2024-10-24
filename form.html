@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New Video</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">Featured Page</a>
+        <a href="./pages/collection-one.html">Standard Videos</a>
+        <a href="./pages/collection-two.html">Short Form Content</a>
+        <a href="./pages/collection-three.html">Long Form Content</a>
+        <a href="/form.html">New Video</a>
+      </nav>
+    </header>
+    <form action="#" method="post">
+      <h1>Add New Video</h1>
+      <br />
+      <label for="title"><span style="font-size: 24px">Video Title</span></label
+      ><br />
+      <input
+        id="title"
+        type="text"
+        placeholder="Write your video Title"
+        required
+      />
+      <br /><br />
+      <label for="description"
+        ><span style="font-size: 24px">Description</span></label
+      ><br />
+      <textarea
+        name="description"
+        id="description"
+        placeholder="Write your description here"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br /><br />
+      <label style="font-size: 24px" for="upload">Video</label><br />
+      <input type="file" id="upload" required /><br /><br />
+      <select name="collection" id="collection" required>
+        <option value="" disabled selected>Choose Collection Type...</option>
+        <option value="standard">Standard Videos</option>
+        <option value="short">Short Form Content</option>
+        <option value="long">Long Form Content</option>
+      </select>
+      <br /><br />
+      <label>
+        <input type="radio" name="visibility" value="public" required />Public
+      </label>
+      <label>
+        <input type="radio" name="visibility" value="private" required />Private
+      </label>
+      <br /><br /><br />
+      <input type="submit" value="Upload Video" />
+    </form>
+    <footer>
+      <hr />
+      <p>&copy; Copyright</p>
+      <h2>Check out my Links!</h2>
+      <a href="https://github.com/ProfessorAttire">Github</a> <br />
+      <a href="https://www.linkedin.com/in/p-petersen/">Linkedin</a>
+    </footer>
+  </body>
+</html>
